@@ -1,0 +1,50 @@
+@import '@styles/variables.scss';
+
+.card {
+  border-radius: $radius-08;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  &:hover {
+    .content {
+      transform: translateX(0);
+    }
+
+    img {
+      filter: blur(1px);
+    }
+  }
+}
+
+.content {
+  padding: $spacing-12;
+  position: absolute;
+  bottom: $spacing-16;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 0 $radius-08 $radius-08 0;
+  width: 50%;
+  transform: translateX(-101%);
+  transition: transform 0.25s;
+
+  h4 {
+    font-size: 20px;
+    color: $color-white;
+  }
+  
+  p {
+    margin-top: 4px;
+    font-size: 12px;
+    color: $accent-color;
+  }
+}
+
+.image {
+  border-radius: $radius-08;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: filter 0.45s;
+}
+

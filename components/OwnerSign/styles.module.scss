@@ -1,0 +1,12 @@
+@import '@styles/variables.scss';
+
+.special {
+  background: $color-black;
+  border-radius: $radius-04;
+  padding: $spacing-10 $spacing-16;
+  width: fit-content;
+
+  p {
+    color: $color-white;
+  }
+}

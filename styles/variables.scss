@@ -1,0 +1,74 @@
+$primary-color: #fcf9ef;
+$secondary-color: #fdd499;
+$accent-color: #ff9e18;
+$color-black: #1c1c1c;
+$color-white: #fff;
+$color-blured: rgba(252, 249, 239, 0.92);
+
+$spacing-00: 0rem;
+$spacing-02: 0.2rem;
+$spacing-03: 0.3rem;
+$spacing-04: 0.4rem;
+$spacing-05: 0.5rem;
+$spacing-06: 0.6rem;
+$spacing-07: 0.7rem;
+$spacing-08: 0.8rem;
+$spacing-09: 0.9rem;
+$spacing-10: 1rem;
+$spacing-11: 1.1rem;
+$spacing-12: 1.2rem;
+$spacing-13: 1.3rem;
+$spacing-14: 1.4rem;
+$spacing-15: 1.5rem;
+$spacing-16: 1.6rem;
+$spacing-17: 1.7rem;
+$spacing-18: 1.8rem;
+$spacing-19: 1.9rem;
+$spacing-20: 2rem;
+$spacing-21: 2.1rem;
+$spacing-22: 2.2rem;
+$spacing-23: 2.3rem;
+$spacing-24: 2.4rem;
+$spacing-25: 2.5rem;
+$spacing-26: 2.6rem;
+$spacing-27: 2.7rem;
+$spacing-28: 2.8rem;
+$spacing-29: 2.9rem;
+$spacing-30: 3rem;
+$spacing-31: 3.1rem;
+$spacing-32: 3.2rem;
+$spacing-33: 3.3rem;
+$spacing-34: 3.4rem;
+$spacing-35: 3.5rem;
+$spacing-36: 3.6rem;
+$spacing-37: 3.7rem;
+$spacing-38: 3.8rem;
+$spacing-39: 3.9rem;
+$spacing-40: 4rem;
+$spacing-80: 8rem;
+
+$radius-02: 0.2rem;
+$radius-04: 0.4rem;
+$radius-08: 0.8rem;
+
+$header-height-mobile: 70px;
+$header-height-desktop: 100px;
+$index-header: 10;
+$index-panel: 30;
+$index-modal: 20;
+
+$body-padding-desktop: calc($header-height-desktop + $spacing-20);
+$body-padding-mobile: calc($header-height-mobile + $spacing-16);
+
+.border-divider {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: $accent-color;
+    bottom: 0;
+  }
+}

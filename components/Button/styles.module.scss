@@ -1,0 +1,24 @@
+@import '@styles/variables.scss';
+
+%button-shared {
+  background: $accent-color;
+  color: $color-white;
+  border-radius: $radius-02;
+  border: none;
+}
+
+.btn-small {
+  @extend %button-shared;
+  padding: $spacing-04 $spacing-18;
+}
+
+.btn-medium {
+  @extend %button-shared;
+  padding: $spacing-08 $spacing-20;
+}
+
+.btn-large {
+  @extend %button-shared;
+  padding: $spacing-08 $spacing-30;
+  font-size: 24px;
+}

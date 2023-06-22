@@ -1,0 +1,32 @@
+@import '@styles/variables.scss';
+
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $spacing-12;
+
+  &:not(:last-child) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $spacing-24;
+  }
+
+  input {
+    background: transparent;
+    border: 1px solid $secondary-color;
+    padding: $spacing-10) $spacing-14;
+
+    &:focus {
+      border: 1px solid $accent-color;
+    }
+  }
+
+  label {
+    margin-bottom: $spacing-08;
+    transition: all 0.3s;
+  }
+
+  &:has(input:focus) > label {
+    margin-left: $spacing-08;
+  }
+}

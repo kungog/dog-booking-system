@@ -1,0 +1,58 @@
+@import '@styles/variables.scss';
+
+.doggos {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(1, 1fr);
+
+  h1 {
+    position: fixed;
+    max-width: 300px;
+    font-weight: 600;
+  }
+
+  @media (max-width: 600px) {
+    h1 {
+      position: initial;
+    }
+  }
+
+  @media (min-width: 600px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.wrapper {
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: $spacing-20;
+  grid-row-gap: $spacing-20;
+
+  @media (max-width: 400px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media (min-width: 600px) {
+    grid-column-gap: $spacing-20;
+    grid-row-gap: $spacing-20;
+  }
+
+  @media (min-width: 800px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(2, minmax(300px, 300px));
+  }
+}

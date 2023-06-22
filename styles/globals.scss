@@ -1,0 +1,64 @@
+@import '@styles/variables.scss';
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: $color-black;
+  background-color: $primary-color;
+  font-size: 16px;
+  font-family: 'Gilroy', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $accent-color;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.border-divider {
+  position: relative;
+}
+
+.border-divider::before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: $accent-color;
+  bottom: 0;
+}
+
+h1 {
+  font-size: 120px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,75 @@
+@import '@styles/variables.scss';
+
+.main {
+  padding: calc($body-padding-desktop) 0;
+
+	@media (max-width: 1200px) {
+    padding: calc($body-padding-mobile) 0;
+	}
+}
+
+.home {
+  height: 100%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: $spacing-80;
+  grid-row-gap: $spacing-40;
+
+  .date {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (max-width: 950px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.images {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: $spacing-20;
+
+  &::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: $accent-color;
+    bottom: 0;
+  }
+
+  img {
+    border-radius: $radius-08;
+    padding-bottom: 94px;
+  }
+
+  @media (max-width: 950px) {
+    display: none;
+  }
+}
+
+.content {
+  h1 {
+    color: $accent-color;
+    margin-bottom: $spacing-38;
+  }
+  p {
+    max-width: 360px;
+  }
+
+  @media (max-width: 950px) {
+    max-width: 300px;
+    p {
+      max-width: 290px;
+    }
+  }
+}
